@@ -1,4 +1,54 @@
-.test {
-  font-weight: 700;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+html {
+  font-family: 'Outfit', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #1a2a32;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/*
+  Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.new-game-container {
+  width: 460px;
+  height: 471px;
+  border: 2px solid white;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,9 +1,9 @@
 {
   "name": "tic-tac-toe",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/js/index.js",
   "repository": "https://github.com/sohhamm/tic-tac-toe.git",
-  "author": "Soham Sarkar <soham.ss1@gmail.com>",
+  "author": "Soham Sarkar <sohamsarkar.work@gmail.com>",
   "license": "MIT",
   "engines": {
     "node": "17"
