@@ -160,10 +160,10 @@ select {
   margin-bottom: 6px;
 }
 
-.yellow-btn {
+.cpu-btn {
   @include button($color: $light-yellow, $color2: #cc8b13);
 }
 
-.blue-btn {
+.player-btn {
   @include button($color: $light-blue, $color2: #118c87);
 }

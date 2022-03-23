@@ -1,13 +1,24 @@
+import {domNodes, state} from './index.js'
+
 export function handleSelectP1(value, state) {
-  const imageX = document.getElementById('x-mark-logo')
-  const imageO = document.getElementById('o-mark-logo')
   if (value === 'X') {
     state.P1 = 'X'
-    document.getElementById('x-mark').classList.add('mark-active')
-    document.getElementById('o-mark').classList.remove('mark-active')
+    domNodes.containerX.classList.add('mark-active')
+    domNodes.containerO.classList.remove('mark-active')
   } else {
     state.P1 = 'O'
-    document.getElementById('o-mark').classList.add('mark-active')
-    document.getElementById('x-mark').classList.remove('mark-active')
+    domNodes.containerO.classList.add('mark-active')
+    domNodes.containerX.classList.remove('mark-active')
+  }
+}
+
+export function handleStartGame(type) {
+  domNodes.menuContainer.style.display = 'none'
+  domNodes.gameContainer.style.display = 'block'
+  if (type === '1v1') {
+    state.mode = '1V1'
+  }
+  if (type === 'CPU') {
+    state.mode = 'CPU'
   }
 }

@@ -127,7 +127,7 @@ select {
   margin-bottom: 6px;
 }
 
-.yellow-btn {
+.cpu-btn {
   background: #f2b036;
   -webkit-box-shadow: inset 0px -8px 0px #cc8b13;
           box-shadow: inset 0px -8px 0px #cc8b13;
@@ -142,7 +142,7 @@ select {
   letter-spacing: 1.25px;
 }
 
-.blue-btn {
+.player-btn {
   background: #31c4bf;
   -webkit-box-shadow: inset 0px -8px 0px #118c87;
           box-shadow: inset 0px -8px 0px #118c87;
@@ -156,4 +156,4 @@ select {
   font-size: 20px;
   letter-spacing: 1.25px;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main-menu.styles.css.map */

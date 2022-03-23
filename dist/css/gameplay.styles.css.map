@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,qBAAqB,CAAC;EACpB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,eAAe;EACvB,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "../../src/styles/gameplay.styles.scss"
+    ],
+    "names": [],
+    "file": "gameplay.styles.css"
+}
