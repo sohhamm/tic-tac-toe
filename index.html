@@ -28,18 +28,21 @@
           <h1 class="header-text">PICK PLAYER 1’S MARK</h1>
 
           <div class="mark-group">
-            <div class="mark">
+            <div class="mark" id="x-mark">
               <img
-                src="./src/assets/icon-x-outline.svg"
-                alt="x-mark"
+                src="./src/assets/icon-x.svg"
+                alt="select X"
                 class="icon-pick"
+                fill="currentColor"
+                id="x-mark-logo"
               />
             </div>
-            <div class="mark mark-active">
+            <div class="mark mark-active" id="o-mark">
               <img
-                src="./src/assets/icon-o-outline.svg"
-                alt="x-mark"
-                class="icon-pick"
+                src="./src/assets/icon-o.svg"
+                alt="select O"
+                class="icon-pick icon-pick-active"
+                id="o-mark-logo"
               />
             </div>
           </div>
@@ -51,9 +54,6 @@
         <button class="blue-btn">NEW GAME (VS PLAYER)</button>
       </div>
     </main>
-
-    Pick player 1's mark Remember: X goes first New Game (vs CPU) New Game (vs
-    player)
 
     <!-- New game menu end -->
 
@@ -76,5 +76,7 @@
     restart
 
     <!-- Game board end -->
+
+    <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>

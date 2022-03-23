@@ -131,6 +131,12 @@ select {
 .icon-pick {
   width: 32px;
   height: 32px;
+  color: $dark-navy;
+  // filter: invert(90%) sepia(13%) saturate(330%) hue-rotate(153deg)
+  //   brightness(81%) contrast(93%);
+}
+.icon-pick-active {
+  // background-color: $dark-navy;
 }
 
 .mark {
