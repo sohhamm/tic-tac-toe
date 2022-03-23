@@ -66,6 +66,20 @@ select {
   letter-spacing: 1px;
 }
 
+@mixin button($color, $color2) {
+  background: $color;
+  box-shadow: inset 0px -8px 0px $color2;
+  border-radius: 15px;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 25px;
+  border: none;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.25px;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -82,8 +96,6 @@ select {
 
 .new-game-container {
   width: 460px;
-  height: 471px;
-  border: 2px solid white;
 }
 
 .logo {
@@ -97,11 +109,55 @@ select {
   border-radius: 15px;
   text-align: center;
   width: 460px;
-  height: 205px;
+  padding: 24px;
+  margin-bottom: 40px;
 }
 
 .header-text {
   @extend %extra-small-heading;
   margin-bottom: 24px;
   color: $silver;
+}
+
+.mark-group {
+  display: flex;
+  gap: 9px;
+  background: $dark-navy;
+  padding: 9px;
+  border-radius: 10px;
+  margin-bottom: 17px;
+}
+
+.icon-pick {
+  width: 32px;
+  height: 32px;
+}
+
+.mark {
+  width: 100%;
+  border-radius: 10px;
+  padding: 11px;
+}
+
+.mark-active {
+  background: $silver;
+}
+
+.sub-header-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.875px;
+  color: $silver;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 6px;
+}
+
+.yellow-btn {
+  @include button($color: $light-yellow, $color2: #cc8b13);
+}
+
+.blue-btn {
+  @include button($color: $light-blue, $color2: #118c87);
 }

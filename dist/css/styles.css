@@ -66,8 +66,6 @@ select {
 
 .new-game-container {
   width: 460px;
-  height: 471px;
-  border: 2px solid white;
 }
 
 .logo {
@@ -82,11 +80,79 @@ select {
   border-radius: 15px;
   text-align: center;
   width: 460px;
-  height: 205px;
+  padding: 24px;
+  margin-bottom: 40px;
 }
 
 .header-text {
   margin-bottom: 24px;
   color: #aac0cb;
+}
+
+.mark-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  background: #1a2a32;
+  padding: 9px;
+  border-radius: 10px;
+  margin-bottom: 17px;
+}
+
+.icon-pick {
+  width: 32px;
+  height: 32px;
+}
+
+.mark {
+  width: 100%;
+  border-radius: 10px;
+  padding: 11px;
+}
+
+.mark-active {
+  background: #aac0cb;
+}
+
+.sub-header-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.875px;
+  color: #aac0cb;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 6px;
+}
+
+.yellow-btn {
+  background: #f2b036;
+  -webkit-box-shadow: inset 0px -8px 0px #cc8b13;
+          box-shadow: inset 0px -8px 0px #cc8b13;
+  border-radius: 15px;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 25px;
+  border: none;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.25px;
+}
+
+.blue-btn {
+  background: #31c4bf;
+  -webkit-box-shadow: inset 0px -8px 0px #118c87;
+          box-shadow: inset 0px -8px 0px #118c87;
+  border-radius: 15px;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 25px;
+  border: none;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.25px;
 }
 /*# sourceMappingURL=styles.css.map */
