@@ -33,6 +33,12 @@ select {
   font: inherit;
 }
 
+.header-text {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,9 +52,41 @@ select {
   height: 100%;
 }
 
+.logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 8.3px;
+          column-gap: 8.3px;
+  margin-bottom: 40px;
+}
+
 .new-game-container {
   width: 460px;
   height: 471px;
   border: 2px solid white;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+}
+
+.mark-picker {
+  background: #1f3641;
+  -webkit-box-shadow: inset 0px -8px 0px #10212a;
+          box-shadow: inset 0px -8px 0px #10212a;
+  border-radius: 15px;
+  text-align: center;
+  width: 460px;
+  height: 205px;
+}
+
+.header-text {
+  margin-bottom: 24px;
+  color: #aac0cb;
 }
 /*# sourceMappingURL=styles.css.map */
