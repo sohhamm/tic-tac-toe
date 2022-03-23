@@ -4,4 +4,26 @@
   border: 2px white solid;
   display: none;
 }
+
+.top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.current-turn {
+  width: 140px;
+  height: 52px;
+  left: 650px;
+  top: 139px;
+  /* Semi Dark Navy */
+  background: #1f3641;
+  -webkit-box-shadow: inset 0px -4px 0px #10212a;
+          box-shadow: inset 0px -4px 0px #10212a;
+  border-radius: 10px;
+}
 /*# sourceMappingURL=gameplay.styles.css.map */

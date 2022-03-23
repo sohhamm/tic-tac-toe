@@ -1,6 +1,23 @@
+@use './_config.scss';
+
 .game-start-container {
   width: 460px;
   height: 623px;
   border: 2px white solid;
   display: none;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.current-turn {
+  width: 140px;
+  height: 52px;
+
+  background: $semi-dark-navy;
+  box-shadow: inset 0px -4px 0px #10212a;
+  border-radius: 10px;
 }
