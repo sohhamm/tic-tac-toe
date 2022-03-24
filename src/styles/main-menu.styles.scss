@@ -22,7 +22,8 @@ $silver-hover: hsla(198, 35%, 89%, 1);
 }
 
 .new-game-container {
-  width: 460px;
+  max-width: 460px;
+  width: 100%;
 }
 
 .logo {
@@ -35,7 +36,7 @@ $silver-hover: hsla(198, 35%, 89%, 1);
   box-shadow: inset 0px -8px 0px #10212a;
   border-radius: 15px;
   text-align: center;
-  width: 460px;
+  width: 100%;
   padding: 24px;
   margin-bottom: 40px;
 }
