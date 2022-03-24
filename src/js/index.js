@@ -16,6 +16,8 @@ export const domNodes = {
   imageO: document.getElementById('o-mark-logo'),
   menuContainer: document.querySelector('.new-game-container'),
   gameContainer: document.querySelector('.game-start-container'),
+  currentTurnX: document.querySelector('.current-turn-x'),
+  currentTurnO: document.querySelector('.current-turn-o'),
 }
 
 window.nodes = domNodes

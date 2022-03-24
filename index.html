@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="/dist/css/main-menu.styles.css" />
     <link rel="stylesheet" href="/dist/css/gameplay.styles.css" />
+    <link rel="stylesheet" href="/dist/css/config.css" />
 
     <title>Tic Tac Toe</title>
   </head>
@@ -62,10 +63,60 @@
             <img src="./src/assets/icon-o.svg" class="logo" />
           </div>
 
-          <div class="current-turn">x-turn</div>
+          <div class="current-turn">
+            <div>
+              <img
+                src="./src/assets/icon-x.svg"
+                class="current-turn-x"
+                style="width: 18px; height: 18px; margin-right: 10px"
+              />
+            </div>
 
-          <img src="./src/assets/icon-restart.svg" class="restart-icon" />
+            <!-- <span>
+              <img src="./src/assets/icon-o.svg" class="current-turn-o" />
+            </span> -->
+            <div class="header-text" style="padding-bottom: 4px">TURN</div>
+          </div>
+
+          <div class="refresh-box">
+            <img src="./src/assets/icon-restart.svg" class="restart-icon" />
+          </div>
         </header>
+
+        <div class="game-grid">
+          <div class="sub-grid"></div>
+
+          <div class="sub-grid"></div>
+
+          <div class="sub-grid"></div>
+
+          <div class="sub-grid"></div>
+
+          <div class="sub-grid"></div>
+
+          <div class="sub-grid"></div>
+
+          <div class="sub-grid"></div>
+
+          <div class="sub-grid"></div>
+
+          <div class="sub-grid"></div>
+        </div>
+
+        <div class="score-box">
+          <div class="score score-p1">
+            <p class="score-text-top">X(YOU)</p>
+            <p class="score-text-bottom">0</p>
+          </div>
+          <div class="score score-tie">
+            <p class="score-text-top">TIES</p>
+            <p class="score-text-bottom">0</p>
+          </div>
+          <div class="score score-p2">
+            <p class="score-text-top">O(CPU)</p>
+            <p class="score-text-bottom">0</p>
+          </div>
+        </div>
       </div>
     </main>
 

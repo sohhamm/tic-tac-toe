@@ -22,3 +22,8 @@ export function handleStartGame(type) {
     state.mode = 'CPU'
   }
 }
+
+export function handleCurrentTurn() {
+  // if (state.P1 === 'X') {
+  // }
+}

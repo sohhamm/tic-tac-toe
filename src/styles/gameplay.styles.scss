@@ -1,9 +1,15 @@
-@use './_config.scss';
+$light-blue: hsla(178, 60%, 48%, 1);
+$light-blue-hover: hsla(178, 76%, 66%, 1);
+$light-yellow: hsla(39, 88%, 58%, 1);
+$light-yellow-hover: hsla(39, 100%, 69%, 1);
+$dark-navy: hsla(200, 32%, 15%, 1);
+$semi-dark-navy: hsla(200, 35%, 19%, 1);
+$silver: hsla(199, 24%, 73%, 1);
+$silver-hover: hsla(198, 35%, 89%, 1);
 
 .game-start-container {
   width: 460px;
   height: 623px;
-  border: 2px white solid;
   display: none;
 }
 
@@ -16,8 +22,99 @@
 .current-turn {
   width: 140px;
   height: 52px;
-
-  background: $semi-dark-navy;
   box-shadow: inset 0px -4px 0px #10212a;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: $semi-dark-navy;
+}
+
+.refresh-box {
+  width: 52px;
+  height: 52px;
+  box-shadow: inset 0px -4px 0px #6b8997;
+  border-radius: 10px;
+  /* Silver */
+  background-color: $silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: $silver;
+  margin: auto 0px;
+}
+
+.current-turn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-turn-x {
+  color: $silver;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.sub-grid {
+  width: 140px;
+  height: 140px;
+  background-color: $semi-dark-navy;
+  box-shadow: inset 0px -8px 0px #10212a;
+  border-radius: 15px;
+}
+
+.score-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 19px;
+}
+
+.score {
+  width: 140px;
+  height: 72px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-top-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.875px;
+  color: $dark-navy;
+}
+
+.score-text-bottom {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  color: $dark-navy;
+}
+
+.score-p1 {
+  background-color: $light-blue;
+}
+
+.score-tie {
+  background-color: $silver;
+}
+
+.score-p2 {
+  background-color: $light-yellow;
 }
