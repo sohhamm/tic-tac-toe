@@ -117,3 +117,22 @@ $silver-hover: hsla(198, 35%, 89%, 1);
 .score-p2 {
   background-color: $light-yellow;
 }
+
+.modal {
+  // display: none;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0); /* Black w/ opacity */
+}
+
+.modal-content {
+  width: 100%;
+  height: 266px;
+  margin-top: 35vh;
+  padding: 45px 0px;
+  background-color: $semi-dark-navy;
+}

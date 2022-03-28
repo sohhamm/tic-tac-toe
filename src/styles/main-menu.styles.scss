@@ -7,6 +7,20 @@ $semi-dark-navy: hsla(200, 35%, 19%, 1);
 $silver: hsla(199, 24%, 73%, 1);
 $silver-hover: hsla(198, 35%, 89%, 1);
 
+@mixin button($color, $color2) {
+  background: $color;
+  box-shadow: inset 0px -8px 0px $color2;
+  border-radius: 15px;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 25px;
+  border: none;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.25px;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -32,7 +46,7 @@ $silver-hover: hsla(198, 35%, 89%, 1);
 }
 
 .mark-picker {
-  background: config.$semi-dark-navy;
+  background: $semi-dark-navy;
   box-shadow: inset 0px -8px 0px #10212a;
   border-radius: 15px;
   text-align: center;
@@ -41,16 +55,22 @@ $silver-hover: hsla(198, 35%, 89%, 1);
   margin-bottom: 40px;
 }
 
-.header-text {
+%extra-small-heading {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.header-text-menu {
   @extend %extra-small-heading;
   margin-bottom: 24px;
-  color: config.$silver;
+  color: $silver;
 }
 
 .mark-group {
   display: flex;
   gap: 9px;
-  background: config.$dark-navy;
+  background: $dark-navy;
   padding: 9px;
   border-radius: 10px;
   margin-bottom: 17px;
@@ -59,7 +79,7 @@ $silver-hover: hsla(198, 35%, 89%, 1);
 .icon-pick {
   width: 32px;
   height: 32px;
-  color: config.$dark-navy;
+  color: $dark-navy;
   // filter: invert(90%) sepia(13%) saturate(330%) hue-rotate(153deg)
   //   brightness(81%) contrast(93%);
 }
@@ -74,7 +94,7 @@ $silver-hover: hsla(198, 35%, 89%, 1);
 }
 
 .mark-active {
-  background: config.$silver;
+  background: $silver;
 }
 
 .sub-header-text {
@@ -82,16 +102,16 @@ $silver-hover: hsla(198, 35%, 89%, 1);
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.875px;
-  color: config.$silver;
+  color: $silver;
   mix-blend-mode: normal;
   opacity: 0.5;
   margin-bottom: 6px;
 }
 
 .cpu-btn {
-  @include button($color: config.$light-yellow, $color2: #cc8b13);
+  @include button($color: $light-yellow, $color2: #cc8b13);
 }
 
 .player-btn {
-  @include button($color: config.$light-blue, $color2: #118c87);
+  @include button($color: $light-blue, $color2: #118c87);
 }
